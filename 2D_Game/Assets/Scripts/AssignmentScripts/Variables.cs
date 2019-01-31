@@ -9,7 +9,7 @@ public class Variables : MonoBehaviour {
     public string name;
 
 	void Start () {
-        // This is the syntax for a comment.
+        // This syntax IS actually a comment.
 
         number = 10;
         speed = 0.94f;
@@ -25,7 +25,7 @@ public class Variables : MonoBehaviour {
           */
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
         transform.position = new Vector3(number, 0, 0);
 	}
