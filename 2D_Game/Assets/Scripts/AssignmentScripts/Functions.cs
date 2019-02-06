@@ -14,29 +14,38 @@ public class Functions : MonoBehaviour {
 
     void Weather(string weatherStatus) {
 
-        if (weatherStatus == "Sunny") {
+        if (weatherStatus == "Sunny")
+        {
 
             print("Wow it's kinda bright today, huh?");
+
         }
-        else if (weatherStatus == "Raining") {
+        else if (weatherStatus == "Raining")
+        {
 
             print("It is soggy and wet today.");
+
         }
-        else if (weatherStatus == "Windy") {
+        else if (weatherStatus == "Windy")
+        {
 
             print("It is rather blustery today.");
 
         }
-        else if (weatherStatus == "Snowing") {
+        else if (weatherStatus == "Snowing")
+        {
 
             print("It is the best type of weather today.");
+
         }
-        else if (weatherStatus == "Foggy") {
+        else if (weatherStatus == "Foggy")
+        {
 
             print("Visibility is very poor due to fog");
 
         }
-        else if (weatherStatus == "Clear") {
+        else if (weatherStatus == "Clear")
+        {
 
             print("The weather is rather clear today.");
 
