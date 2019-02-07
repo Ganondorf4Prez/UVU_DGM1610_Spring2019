@@ -7,8 +7,8 @@ public class QuadraticCalcTest : MonoBehaviour {
     public int a;
     public int b;
     public int c;
-    public int xplus;
-    public int xneg;
+    private int xplus;
+    private int xneg;
 
 	private void Start () {
 
@@ -25,6 +25,9 @@ public class QuadraticCalcTest : MonoBehaviour {
 
         xplus = ((-1) * b) + (((b * b) - (4 * a * c)) ^ 1/2);
         xneg = ((-1) * b) - (((b * b) - (4 * a * c)) ^ 1 / 2);
+
+        print("The positive X is " + xplus);
+        print("The negative X is " + xneg);
 		
 	}
 }
