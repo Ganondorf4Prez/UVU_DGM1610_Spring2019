@@ -456,6 +456,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userSpeed: 3
+  jumpHeight: 3
+--- !u!1 &1435165534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435165538}
+  - component: {fileID: 1435165537}
+  - component: {fileID: 1435165536}
+  - component: {fileID: 1435165535}
+  m_Layer: 0
+  m_Name: Insect Inheritor
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1435165535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435165534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65e6e3a3a1fd574ea011b7516499607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  insectType: 
+  wings: 0
+  horns: 0
+  stinger: 0
+  poisonous: 0
+  size: 0
+  weight: 0
+  bugSpeed: 0
+  bugColor: 
+--- !u!114 &1435165536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435165534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0eca6ad547ad994aade9b76c10c470c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  insectType: 
+  wings: 0
+  horns: 0
+  stinger: 0
+  poisonous: 0
+  size: 0
+  weight: 0
+  bugSpeed: 0
+  bugColor: 
+--- !u!114 &1435165537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435165534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2c33dd8ba49f540a582b138ba482e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  insectType: 
+--- !u!4 &1435165538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435165534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.68, y: -1.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1732231088
 GameObject:
   m_ObjectHideFlags: 0
