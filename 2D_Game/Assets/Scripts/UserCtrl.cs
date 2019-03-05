@@ -10,15 +10,21 @@ public class UserCtrl : MonoBehaviour {
 
     //Grounded modifiers
     private bool grounded;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
 
 	
 	void Start () {
         //Default grounding set
-        grounded = true;
+        
 	}
-	
-	
-	void Update () {
+    private void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
+
+    void Update () {
         //Moves player left and right
         if (Input.GetKey(KeyCode.D))
         {
@@ -28,12 +34,21 @@ public class UserCtrl : MonoBehaviour {
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-userSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
-
+        
         //Jump Mechanics
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump(); 
         }
 		
 	}
+
+    void Jump()
+    {
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+
+    }
+
+
 }
