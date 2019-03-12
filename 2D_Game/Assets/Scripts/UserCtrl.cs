@@ -42,7 +42,7 @@ public class UserCtrl : MonoBehaviour {
         }
 		
 	}
-
+    //Jump Function
     void Jump()
     {
 

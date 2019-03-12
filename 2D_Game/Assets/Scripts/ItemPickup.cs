@@ -13,6 +13,8 @@ public class ItemPickup : MonoBehaviour {
         {
             print("You've collected the item, m8");
 
+            ScoreManager.AddPoints(coinValue);
+
             Destroy(gameObject); 
         }
 
