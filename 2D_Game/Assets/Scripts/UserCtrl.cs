@@ -36,7 +36,7 @@ public class UserCtrl : MonoBehaviour {
         }
         
         //Jump Mechanics
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.W) && grounded)
         {
             Jump(); 
         }
