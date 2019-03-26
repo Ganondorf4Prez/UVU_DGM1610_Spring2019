@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour {
 
     public int coinValue;
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,6 +13,8 @@ public class ItemPickup : MonoBehaviour {
         if (other.name == "Player")
         {
             print("You've collected the item, m8");
+            
+            
 
             ScoreManager.AddPoints(coinValue);
 
