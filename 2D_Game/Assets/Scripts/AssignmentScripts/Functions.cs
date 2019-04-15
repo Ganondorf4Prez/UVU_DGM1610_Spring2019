@@ -5,6 +5,8 @@ using UnityEngine;
 public class Functions : MonoBehaviour {
 
     public string weather;
+    public int x;
+    public int sum;
 
     private void Start() {
 
@@ -56,5 +58,11 @@ public class Functions : MonoBehaviour {
 
         }
     }
+    int SquareNum(int x)
+    {
+        sum = x * x;
+        return sum;
+    }
+    
 
 }

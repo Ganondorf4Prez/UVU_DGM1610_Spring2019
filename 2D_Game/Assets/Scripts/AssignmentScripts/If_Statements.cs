@@ -17,6 +17,9 @@ public class If_Statements : MonoBehaviour {
     public string fruit;        //Variable for homework conditional 3
     public bool isFruit;        //Variable for homework conditional 3
 
+    public string knight;       //Variable for homework conditional 4
+    public bool isKing;         //Variable for homework conditional 4
+
 	void Start () {
 		
 	}
@@ -130,5 +133,54 @@ public class If_Statements : MonoBehaviour {
             print("Hey, that's not even a fruit!");
         }
 
+        // Conditional 4 for homework
+        if (knight == "Sir Galahad")
+        {
+            if (isKing)
+            {
+                print("Congratulations on your Kingship, " + knight + "!");
+            }
+            else
+            {
+                print("A knight of Camelot!");
+            }
+        }
+        else if (knight == "Sir Lancelot")
+        {
+            if (isKing)
+            {
+                print("Congratulations on your Kingship, " + knight + "!");
+            }
+            else
+            {
+                print("A knight of Camelot!");
+            }
+        }
+        else if(knight == "Sir Robin")
+        {
+            if (isKing)
+            {
+                print("Congratulations on your Kingship, " + knight + "!");
+            }
+            else
+            {
+                print("A knight of Camelot!");
+            }
+        }
+        else if(knight == "King Arthur")
+        {
+            print("King Arthur, of Camelot!");
+        }
+        else 
+        {
+            if (isKing)
+            {
+                print("Congratulations on your Kingship, " + knight + "!");
+            }
+            else
+            {
+                print("We are unfamiliar of who you are, good Sir Knight!");
+            }
+        }
 	}
 }
