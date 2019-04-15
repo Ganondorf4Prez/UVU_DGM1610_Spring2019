@@ -14,9 +14,13 @@ public class UserCtrl : MonoBehaviour {
     public float groundCheckRadius;
     public LayerMask whatIsGround;
 
+    public Animator animator;
+
 
     void Start() {
-        //Default grounding set
+        //Animation reset
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isJumping", false);
 
     }
     private void FixedUpdate()
@@ -29,12 +33,29 @@ public class UserCtrl : MonoBehaviour {
         if (Input.GetKey(KeyCode.D))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(userSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            animator.SetBool("isWalking", true);
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-userSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            animator.SetBool("isWalking", false);
         }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-userSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+        if (grounded)
+        {
+            animator.SetBool("isJumping", false);
+        }
+
+        
         //Jump Mechanics
         if (Input.GetKeyDown(KeyCode.W) && grounded)
         {
@@ -53,6 +74,7 @@ public class UserCtrl : MonoBehaviour {
     {
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+        animator.SetBool("isJumping", true);
 
     }
 
