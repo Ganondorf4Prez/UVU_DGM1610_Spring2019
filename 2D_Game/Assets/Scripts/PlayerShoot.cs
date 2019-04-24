@@ -10,7 +10,7 @@ public class PlayerShoot : MonoBehaviour {
 	
 	void Start () {
         //Load projectile from resources/prefab folder
-        projectile = Resources.Load("Prefabs/Projectile") as GameObject;
+        projectile = Resources.Load("Prefabs/Laser") as GameObject;
 	}
 	
 	// Update is called once per frame

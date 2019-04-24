@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemPickup : MonoBehaviour {
+public class ItemPickup : UserCtrl {
 
-    public int coinValue;
-    
+    public int value;
+    public bool isPower;
+    public float newSpeed = 12;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,10 +14,15 @@ public class ItemPickup : MonoBehaviour {
         if (other.name == "Player")
         {
             print("You've collected the item, m8");
-            
-            
 
-            ScoreManager.AddPoints(coinValue);
+            if (isPower)
+            {
+                userSpeed = newSpeed;
+
+            }
+
+
+            ScoreManager.AddPoints(value);
 
             Destroy(gameObject); 
         }
