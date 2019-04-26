@@ -93,18 +93,18 @@ TextureImporter:
       name: TankFloat_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 311
-        width: 156
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 19
+        y: 431
+        width: 230
+        height: 258
+      alignment: 9
+      pivot: {x: 0.4815801, y: 0.47810543}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 231efc297d144a9428da90b69d5661d5
+      spriteID: f173f26837e675e4aaf987e4f01e5385
       vertices: []
       indices: 
       edges: []
@@ -113,10 +113,10 @@ TextureImporter:
       name: TankFloat_1
       rect:
         serializedVersion: 2
-        x: 168
-        y: 280
-        width: 158
-        height: 184
+        x: 267
+        y: 412
+        width: 230
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141bc436c9106cd438ac8c4fd47324e4
+      spriteID: 42ca75895ed092e4ba86695293ddbb29
       vertices: []
       indices: 
       edges: []
@@ -133,10 +133,10 @@ TextureImporter:
       name: TankFloat_2
       rect:
         serializedVersion: 2
-        x: 332
-        y: 252
-        width: 156
-        height: 183
+        x: 519
+        y: 399
+        width: 230
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,7 +144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbeb0983c5224e646aaee5b5f8d1600c
+      spriteID: de34645be1048dc40b450db488bcbc37
       vertices: []
       indices: 
       edges: []
@@ -153,10 +153,10 @@ TextureImporter:
       name: TankFloat_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 36
-        width: 156
-        height: 182
+        x: 17
+        y: 76
+        width: 230
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,7 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc047ba138e5e994cb5b4639d58bac24
+      spriteID: cceb185ec6d82b747842855ca3667122
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: TankFloat_4
       rect:
         serializedVersion: 2
-        x: 165
-        y: 48
-        width: 156
-        height: 181
+        x: 259
+        y: 65
+        width: 230
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de5dc87b750e228449679f864fc04fa5
+      spriteID: 1a0047c170886f448a53346347bffe22
       vertices: []
       indices: 
       edges: []
@@ -193,10 +193,10 @@ TextureImporter:
       name: TankFloat_5
       rect:
         serializedVersion: 2
-        x: 336
-        y: 67
-        width: 156
-        height: 181
+        x: 503
+        y: 46
+        width: 230
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc82946d1db03524c8a76623eb50d751
+      spriteID: bd07a0fd039974a4ea8be31a88df49e2
       vertices: []
       indices: 
       edges: []
