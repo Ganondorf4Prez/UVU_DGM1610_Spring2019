@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 31dbdfd5ebc40404285d95d296a87bb5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MoonPlatA animation_0
+    21300002: MoonPlatA animation_1
+    21300004: MoonPlatA animation_2
+    21300006: MoonPlatA animation_3
+    21300008: MoonPlatA animation_4
+    21300010: MoonPlatA animation_5
+    21300012: MoonPlatA animation_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +76,160 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MoonPlatA animation_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 247
+        width: 655
+        height: 602
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8c65f54d354504f9b44540524d6faf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_1
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 296
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00bc966a6a98e94a8c0184c9e263add
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_2
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 239
+        width: 655
+        height: 602
+      alignment: 9
+      pivot: {x: 0.49653694, y: 0.473625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed875981f06f97e4eb3606c9ca1b0e2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_3
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 293
+        width: 81
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5b53263bdaedf468afbb6328a30804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_4
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 244
+        width: 655
+        height: 602
+      alignment: 9
+      pivot: {x: 0.5034631, y: 0.42841026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a977666de93b86a4c8e579665f5e3e76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_5
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 228
+        width: 655
+        height: 602
+      alignment: 9
+      pivot: {x: 0.50692576, y: 0.4133388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a023fad8b9ec22243953de48fb1e69a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoonPlatA animation_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 127
+        width: 69
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537b9994b34dbaa458df5023c9be94e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -19,8 +19,8 @@ public class UserCtrl : MonoBehaviour {
 
     void Start() {
         //Animation reset
-        animator.SetBool("isWalking", false);
-        animator.SetBool("isJumping", false);
+        //animator.SetBool("isWalking", false);
+        //animator.SetBool("isJumping", false);
 
     }
     private void FixedUpdate()
@@ -33,26 +33,26 @@ public class UserCtrl : MonoBehaviour {
         if (Input.GetKey(KeyCode.D))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(userSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            animator.SetBool("isWalking", true);
+            //animator.SetBool("isWalking", true);
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            animator.SetBool("isWalking", false);
+            //animator.SetBool("isWalking", false);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-userSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            animator.SetBool("isWalking", true);
+            //animator.SetBool("isWalking", true);
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            animator.SetBool("isWalking", false);
+            //animator.SetBool("isWalking", false);
         }
 
         if (grounded)
         {
-            animator.SetBool("isJumping", false);
+            //animator.SetBool("isJumping", false);
         }
 
         
@@ -76,7 +76,7 @@ public class UserCtrl : MonoBehaviour {
     {
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-        animator.SetBool("isJumping", true);
+        //animator.SetBool("isJumping", true);
 
     }
 
