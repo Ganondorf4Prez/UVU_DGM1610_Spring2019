@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemPickup : UserCtrl {
+public class ItemPickup : MonoBehaviour {
 
     public int value;
     public bool isPower;
@@ -17,7 +17,7 @@ public class ItemPickup : UserCtrl {
 
             if (isPower)
             {
-                userSpeed = newSpeed;
+                
 
             }
 

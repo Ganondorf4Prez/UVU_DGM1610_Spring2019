@@ -11,6 +11,8 @@ public class Projectile : MonoBehaviour {
 
     public GameObject enemyDeath;
 
+    public GameObject breakDeath;
+
     public GameObject projectileParticle; //if it hits something else other than enemy
 
     public int pointsForKill;
@@ -20,6 +22,8 @@ public class Projectile : MonoBehaviour {
         player = GameObject.Find("Player)");
 
         enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
+
+        breakDeath = Resources.Load("Prefabs/Break") as GameObject;
 
         projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
 
@@ -45,8 +49,15 @@ public class Projectile : MonoBehaviour {
             Destroy(other.gameObject);
             ScoreManager.AddPoints(pointsForKill);
         }
-        Destroy(gameObject); //projectile is destroyed after hitting an enemy
 
+        //projectile is destroyed after hitting an enemy
+
+        else if(other.tag == "Breakable")
+        {
+            Instantiate(breakDeath, other.transform.position, other.transform.rotation);
+            Destroy(other.gameObject);
+        }
+        Destroy(gameObject);
     }
     void OnCollisionEnter2D(Collision2D other)
     {
