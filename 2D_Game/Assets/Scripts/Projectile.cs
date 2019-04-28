@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
     public float speed;
+    
 
     public float timeOut;
     public GameObject player;
@@ -21,6 +22,7 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
+        UserCtrl direction = player.GetComponent<UserCtrl>();
 
         enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
 
@@ -28,20 +30,23 @@ public class Projectile : MonoBehaviour {
 
         projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
 
-
-  
-
         //Destroy projectile after x seconds
         Destroy(gameObject, timeOut);
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
+    void Update()
+    {
+        UserCtrl aim = player.GetComponent<UserCtrl>();
+        if (aim.faceRight)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+        else if (!aim.faceRight)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, GetComponent<Rigidbody2D>().velocity.y);
+        }
         
 
-            
     }
 
     void OnTriggerEnter2D(Collider2D other)
