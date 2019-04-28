@@ -6,6 +6,7 @@ public class KillScript : MonoBehaviour {
     //Removed script "Kill Player" off of the enemy
 
     public LevelManager manageCall;
+    public bool deathBox;
 
     void Start()
     {
@@ -16,6 +17,10 @@ public class KillScript : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
+            if (deathBox)
+            {
+                manageCall.RespawnPlayer();
+            }
             UserCtrl HP = other.GetComponent<UserCtrl>();
             if(HP.userHealth == 1)
             {
