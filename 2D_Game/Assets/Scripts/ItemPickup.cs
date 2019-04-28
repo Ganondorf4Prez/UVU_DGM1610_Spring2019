@@ -6,7 +6,8 @@ public class ItemPickup : MonoBehaviour {
 
     public int value;
     public bool isPower;
-    public float newSpeed = 12;
+    
+    public GameObject pickUpEffect;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,15 +16,11 @@ public class ItemPickup : MonoBehaviour {
         {
             print("You've collected the item, m8");
 
-            if (isPower)
-            {
-                
-
-            }
 
 
             ScoreManager.AddPoints(value);
 
+            Instantiate(pickUpEffect, transform.position, transform.rotation);
             Destroy(gameObject); 
         }
 

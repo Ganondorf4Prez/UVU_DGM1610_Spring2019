@@ -8,12 +8,14 @@ public class ScoreManager : MonoBehaviour {
 
     public static int score;
     Text scoreText;
+    
 
 	void Start () {
 
         scoreText = GetComponent<Text>();
+        
 
-        score = 0;
+        score = 0; ;
 		
 	}
 	
