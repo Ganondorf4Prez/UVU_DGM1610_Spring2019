@@ -17,6 +17,7 @@ public class Projectile : MonoBehaviour {
 
     public int pointsForKill;
 
+    
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
@@ -38,7 +39,10 @@ public class Projectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
-	}
+        
+
+            
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

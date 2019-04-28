@@ -32,12 +32,12 @@ public class EnemyPatrol : MonoBehaviour {
 
         if (moveRight)
         {                                     //vvv This is x. These 3 values match the scale of your character
-            transform.localScale = new Vector3(-11f, 11f, 1f);
+            transform.localScale = new Vector3(-0.32f, 0.27f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
         else
         {                                    // See comment above
-            transform.localScale = new Vector3(11f, 11f, 1f);
+            transform.localScale = new Vector3(0.32f, 0.27f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
 		

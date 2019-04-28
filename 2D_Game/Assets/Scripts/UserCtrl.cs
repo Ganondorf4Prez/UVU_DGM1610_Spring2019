@@ -40,12 +40,14 @@ public class UserCtrl : MonoBehaviour {
         else if (Input.GetKeyUp(KeyCode.D))
         {
             //animator.SetBool("isWalking", false);
+            
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-userSpeed, GetComponent<Rigidbody2D>().velocity.y);
             //animator.SetBool("isWalking", true);
+           
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
@@ -66,10 +68,10 @@ public class UserCtrl : MonoBehaviour {
 
         //Player Flip
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
-            transform.Rotate(0f, 180f, 0f);
+            transform.localScale = new Vector3(0.2980793f, 0.29415f, 1f);
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-            //transform.localScale = new Vector3(-11f, 11f, 1f);
-            transform.Rotate(0f, -180f, 0f);
+            transform.localScale = new Vector3(-0.2980793f, 0.29415f, 1f);
+            
         
 
     }
