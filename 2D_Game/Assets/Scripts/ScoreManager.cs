@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour {
         scoreText = GetComponent<Text>();
         
 
-        score = 0; ;
+        score = 0; 
 		
 	}
 	
