@@ -5,25 +5,36 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour {
 
     public int value;
-    public bool isPower;
-    public float newSpeed = 12;
+    public bool isHealth;
+    public int healUp;
+    
+
+    public GameObject pickUpEffect;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.name == "Player")
         {
+            UserCtrl healthVal = other.GetComponent<UserCtrl>();
             print("You've collected the item, m8");
-
-            if (isPower)
+            if (isHealth)
             {
+                if(healthVal.userHealth < 10)
+                {
+                    healthVal.userHealth += healUp;
+                }
+                else if(healthVal.userHealth <= 10)
+                {
+                    healthVal.userHealth = 10;
+                }
                 
-
             }
 
 
             ScoreManager.AddPoints(value);
 
+            Instantiate(pickUpEffect, transform.position, transform.rotation);
             Destroy(gameObject); 
         }
 

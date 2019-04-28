@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.Find("Player)");
+        player = GameObject.Find("Player");
 
         enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
 
@@ -27,8 +27,8 @@ public class Projectile : MonoBehaviour {
 
         projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
 
-        if (player.transform.localScale.x < 0)
-            speed = -speed;
+
+  
 
         //Destroy projectile after x seconds
         Destroy(gameObject, timeOut);

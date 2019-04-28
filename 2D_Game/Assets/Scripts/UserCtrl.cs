@@ -7,6 +7,8 @@ public class UserCtrl : MonoBehaviour {
     //Player movement variables
     public float userSpeed;
     public float jumpHeight;
+    public int userHealth = 10;
+    
 
     //Grounded modifiers
     private bool grounded;
@@ -64,10 +66,10 @@ public class UserCtrl : MonoBehaviour {
 
         //Player Flip
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
-            transform.localScale = new Vector3(11f, 11f, 1f);
+            transform.Rotate(0f, 180f, 0f);
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
             //transform.localScale = new Vector3(-11f, 11f, 1f);
-            transform.Rotate(0f, 180f, 0f);
+            transform.Rotate(0f, -180f, 0f);
         
 
     }
