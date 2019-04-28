@@ -21,7 +21,13 @@ public class PowerUP : MonoBehaviour {
     {
         Instantiate(pickUpEffect, transform.position, transform.rotation);
 
+
         UserCtrl speedup = player.GetComponent<UserCtrl>();
+        PlayerShoot beam = player.GetComponent<PlayerShoot>();
+
+        beam.projectile = Resources.Load("Prefabs/SuperLaser") as GameObject;
+
+        
         speedup.userSpeed *= multiplier;
 
         GetComponent<Collider2D>().enabled = false;
@@ -30,6 +36,7 @@ public class PowerUP : MonoBehaviour {
         yield return new WaitForSeconds(duration);
 
         speedup.userSpeed /= multiplier;
+        beam.projectile = Resources.Load("Prefabs/Laser") as GameObject;
 
 
 
