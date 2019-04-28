@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 2
   duration: 15
-  pickUpEffect: {fileID: 1861414847448370, guid: 2d9cd864c9ee488459b1693af7d70696,
+  pickUpEffect: {fileID: 1458061137348052, guid: 46d1172b2acb60448aedc71f899eabb1,
     type: 2}
 --- !u!212 &212318585997578856
 SpriteRenderer:

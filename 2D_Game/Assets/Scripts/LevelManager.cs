@@ -22,8 +22,11 @@ public class LevelManager : MonoBehaviour {
     //Store Gravity Value
     private float gravityStore;
 
+    //Player Health Value
+    
 
 	void Start () {
+        
         pcRigid = GameObject.Find("Player").GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
 	}
@@ -59,6 +62,7 @@ public class LevelManager : MonoBehaviour {
 
         //Gravity Restore
         pcRigid.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
+
 
         //Match pcRigids transform position
         pcRigid.transform.position = currentCheckPoint.transform.position;

@@ -7,6 +7,8 @@ public class UserCtrl : MonoBehaviour {
     //Player movement variables
     public float userSpeed;
     public float jumpHeight;
+    public int userHealth = 10;
+    
 
     //Grounded modifiers
     private bool grounded;

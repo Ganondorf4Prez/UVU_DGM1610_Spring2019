@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114747219655752384}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   timeOut: 0.5
   player: {fileID: 0}
   enemyDeath: {fileID: 1861414847448370, guid: 2d9cd864c9ee488459b1693af7d70696, type: 2}
+  breakDeath: {fileID: 0}
   projectileParticle: {fileID: 1861414847448370, guid: 2d9cd864c9ee488459b1693af7d70696,
     type: 2}
   pointsForKill: 10

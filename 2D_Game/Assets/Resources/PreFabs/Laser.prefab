@@ -149,9 +149,10 @@ MonoBehaviour:
   timeOut: 0.3
   player: {fileID: 0}
   enemyDeath: {fileID: 1861414847448370, guid: 2d9cd864c9ee488459b1693af7d70696, type: 2}
-  projectileParticle: {fileID: 1861414847448370, guid: 2d9cd864c9ee488459b1693af7d70696,
+  breakDeath: {fileID: 0}
+  projectileParticle: {fileID: 1458061137348052, guid: 46d1172b2acb60448aedc71f899eabb1,
     type: 2}
-  pointsForKill: 10
+  pointsForKill: 0
 --- !u!212 &212510403897877532
 SpriteRenderer:
   m_ObjectHideFlags: 1
